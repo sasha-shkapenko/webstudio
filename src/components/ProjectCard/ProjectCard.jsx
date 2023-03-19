@@ -1,6 +1,6 @@
-const ProjectCard = (id, src, about, title, type) => {
+const ProjectCard = (key, src, about, title, type) => {
   return (
-    <li className="projects__item" key={id}>
+    <li className="projects__item" key={key}>
       <a className="projects__link" href="/">
         <div className="projects__thumb">
           <picture>
