@@ -1,9 +1,9 @@
-const ProjectCard = (key, src, about, title, type) => {
+const ProjectCard = ({ src, about, title, type }) => {
   return (
-    <li className="projects__item" key={key}>
+    <li className="projects__item">
       <a className="projects__link" href="/">
         <div className="projects__thumb">
-          <picture>
+          {/* <picture>
             <source
               srcSet="
                     ./images/portfolio/mob-img1.jpg    1x,
@@ -24,8 +24,8 @@ const ProjectCard = (key, src, about, title, type) => {
             />
 
             <img src={src} alt="Фото " width="370" />
-          </picture>
-
+          </picture> */}
+          <img src={src} alt="Project" width="370" />
           <p className="projects__about">{about}</p>
         </div>
         <div className="projects__descr">
