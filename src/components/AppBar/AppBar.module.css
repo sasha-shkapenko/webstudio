@@ -1,8 +1,0 @@
-@import "../../theme.js";
-.accent {
-  color: var(--accent);
-}
-.header {
-  display: flex;
-  padding: 24px 215px;
-}

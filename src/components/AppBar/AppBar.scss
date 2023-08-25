@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 215px;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.03;
+  margin-right: 93px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  transition: color 250ms ease;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.accent {
+  color: $accent;
+}
+
+.contact-list {
+  display: flex;
+}
+
+.contact-item {
+  transition: color 250ms ease;
+  &:first-child {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.contacts-icon {
+  margin-right: 10px;
+
+  transition: fill 250ms ease;
+  .contact-item:hover & {
+    fill: $accent;
+  }
+}
