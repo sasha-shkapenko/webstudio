@@ -5,6 +5,7 @@ import PortfolioPage from "../pages/PortfolioPage";
 import ContactPage from "../pages/ContactsPage";
 import NotFound from "../pages/NotFound";
 import AppBar from "./AppBar/AppBar";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
