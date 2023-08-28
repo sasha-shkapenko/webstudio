@@ -1,3 +1,5 @@
+import "./ProjectCard.scss";
+
 const ProjectCard = ({ src, about, title, type }) => {
   return (
     <li className="projects__item">
