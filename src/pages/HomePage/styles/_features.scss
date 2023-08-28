@@ -1,0 +1,66 @@
+@import "../../../styles/main.scss";
+
+.section--no-paddind {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+.features {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
+}
+
+.features__icon-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+.features__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc(50% - 30px);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(25%-30px);
+    margin: 15px;
+  }
+}
+.features__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $secondaryColor;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.features__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}

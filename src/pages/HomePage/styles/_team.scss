@@ -1,0 +1,78 @@
+@import "../../../styles/main.scss";
+
+.section--grey-bg {
+  // @extend %section;
+  background-color: #f5f4fa;
+}
+.section__title {
+  @extend %section__title;
+}
+.team {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.team__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  img {
+    width: 100%;
+  }
+}
+
+.team__thumb {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__title {
+  margin-bottom: 10px;
+
+  color: $secondaryColor;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team__description {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+}
+.socials {
+  @extend %socials;
+}
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+.socials__link {
+  @extend %socials__link;
+
+  transition: color 250ms ease, background-color 250ms ease;
+}
+.socials__icon {
+  @extend %socials__icon;
+}
+.socials__link:hover,
+.socials__link:focus {
+  color: #ffffff;
+}

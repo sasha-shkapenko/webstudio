@@ -1,0 +1,38 @@
+.section__title {
+  @extend %section__title;
+}
+.we-do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.we-do__list {
+  display: flex;
+}
+.we-do__item {
+  width: calc((100%-60px) / 3);
+  position: relative;
+}
+.we-do__item:not(:last-child) {
+  margin-right: 30px;
+}
+.we-do__descr-thumb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.we-do__descr-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffffff;
+}
