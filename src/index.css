@@ -1,8 +1,11 @@
 body {
-  margin: 0;
+  background-color: #ffffff;
   font-family: Roboto, sans-serif;
+  margin: 0;
+  letter-spacing: 0.03em;
   font-size: 14px;
   color: #212121;
+  line-height: 1.71;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -36,4 +39,39 @@ h5,
 h6,
 p {
   margin: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
