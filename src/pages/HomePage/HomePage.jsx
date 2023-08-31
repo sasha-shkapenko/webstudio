@@ -445,6 +445,56 @@ const HomePage = () => {
           </ul>
         </div>
       </section>
+
+      <section className="section ">
+        <div className="container">
+          <h2 className="section__title">Постоянные клиенты</h2>
+          <ul className="clients">
+            <li className="clients__item">
+              <a className="clients__link" href="/">
+                <svg className="clients__logo">
+                  <use href="./images/symbol-defs.svg#icon-Logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li className="clients__item">
+              <a className="clients__link" href="/">
+                <svg className="clients__logo">
+                  <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li className="clients__item">
+              <a className="clients__link" href="/">
+                <svg className="clients__logo">
+                  <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li className="clients__item">
+              <a className="clients__link" href="/">
+                <svg className="clients__logo">
+                  <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li className="clients__item">
+              <a className="clients__link" href="/">
+                <svg className="clients__logo">
+                  <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li className="clients__item">
+              <a className="clients__link" href="/">
+                <svg className="clients__logo">
+                  <use href="./images/symbol-defs.svg#icon-Logo-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </>
   );
 };
