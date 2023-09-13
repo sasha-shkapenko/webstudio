@@ -18,17 +18,17 @@ const AppBar = () => (
       </Link>
     </nav>
     <ul className="contact-list">
-      <li class="contact-item">
-        <a class="contact" href="mailto:info@devstudio.com">
-          <svg class="contacts-icon" width="16" height="12">
+      <li className="contact-item">
+        <a className="contact" href="mailto:info@devstudio.com">
+          <svg className="contacts-icon" width="16" height="12">
             <use href="./images/symbol-defs.svg#icon-email"></use>
           </svg>
           info@devstudio.com
         </a>
       </li>
-      <li class="contact-item">
-        <a class="contact" href="tel:+380961111111">
-          <svg class="contacts-icon" width="11" height="16">
+      <li className="contact-item">
+        <a className="contact" href="tel:+380961111111">
+          <svg className="contacts-icon" width="11" height="16">
             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
           </svg>
           +38 096 111 11 11

@@ -1,3 +1,5 @@
+import "./ModalWindow.scss";
+
 const ModalWindow = () => {
   return (
     <div className="backdrop is-hidden" data-modal>

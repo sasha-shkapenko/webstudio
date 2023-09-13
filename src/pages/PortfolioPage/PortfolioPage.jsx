@@ -5,7 +5,7 @@ import "./PortfolioPage.scss";
 const PortfolioPage = () => {
   return (
     <>
-      <section class="section">
+      <section className="section">
         <div className="container">
           <h1 className="visually-hidden">Разработки</h1>
           <ul className="filter">
