@@ -168,7 +168,7 @@
   &__checkbox:checked + &__policy::before {
     border-color: $accent;
     background-color: $accent;
-    background-image: url(../images/studio/icon-check.svg);
+    background-image: url(../../../public/images/studio/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
 

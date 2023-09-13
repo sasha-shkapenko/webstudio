@@ -1,10 +1,13 @@
 import "./ModalWindow.scss";
+import React from "react";
 
-const ModalWindow = () => {
+const ModalWindow = ({ isOpen, onClose, children }) => {
+  if (!isOpen) return null;
+
   return (
-    <div className="backdrop is-hidden" data-modal>
+    <div className="backdrop" data-modal>
       <div className="modal-window">
-        <button data-modal-close className="close__btn">
+        <button data-modal-close className="close__btn" onClick={onClose}>
           <svg className="close__icon" width="11" height="11">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
@@ -80,7 +83,7 @@ const ModalWindow = () => {
             />
             <label className="form-group__policy" for="policy">
               Соглашаюсь с рассылкой и принимаю{" "}
-              <a className="policy-conditions" href="">
+              <a className="policy-conditions" href="/">
                 Условия договора
               </a>
             </label>

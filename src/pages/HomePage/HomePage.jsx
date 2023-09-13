@@ -1,6 +1,18 @@
 import "./styles/main.scss";
+import React, { useState } from "react";
+import ModalWindow from "../../components/ModalWindow/ModalWindow";
 
 const HomePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <section className="hero">
@@ -8,9 +20,15 @@ const HomePage = () => {
           <h1 className="hero__title">
             Эффективные решения <br /> для вашего бизнеcа
           </h1>
-          <button className="hero__button" data-modal-open type="button">
+          <button
+            className="hero__button"
+            data-modal-open
+            type="button"
+            onClick={openModal}
+          >
             Заказать услугу
           </button>
+          <ModalWindow isOpen={isModalOpen} onClose={closeModal} />
         </div>
       </section>
 
