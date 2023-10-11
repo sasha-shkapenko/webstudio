@@ -17,7 +17,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  г. Киев, пр-т Леси Украинки, 26
+                  26 Lesi Ukrainki prospect, Kyiv
                 </a>
               </li>
               <li className="address__item">
@@ -34,7 +34,7 @@ const Footer = () => {
           </address>
         </div>
         <div className="join">
-          <h2 className="join__title">присоединяйтесь</h2>
+          <h2 className="join__title">join us</h2>
           <ul className="socials">
             <li className="socials__item">
               <a className="join__link" href="https://www.instagram.com">
@@ -67,7 +67,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="subscribe">
-          <h2 className="subscribe__title">Подпишитесь на рассылку</h2>
+          <h2 className="subscribe__title">Subscribe to our newsletter</h2>
           <form className="subscribe__form">
             <input
               className="subscribe__email"
@@ -75,7 +75,7 @@ const Footer = () => {
               placeholder="E-mail"
             />
             <button className="subscribe__btn" type="submit">
-              Подписаться
+              Subscribe
               <svg className="subscribe__icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
