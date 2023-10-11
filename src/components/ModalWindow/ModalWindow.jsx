@@ -14,12 +14,12 @@ const ModalWindow = ({ isOpen, onClose, children }) => {
         </button>
 
         <p className="modal-window__title">
-          Оставьте свои данные, мы вам перезвоним
+          Leave us your details and we will call you back!
         </p>
         <form className="modal-window__form" action="#">
           <div className="form-group">
             <label for="name" className="form-group__label">
-              Имя
+              Name
             </label>
             <input
               className="form-group__input"
@@ -34,7 +34,7 @@ const ModalWindow = ({ isOpen, onClose, children }) => {
 
           <div className="form-group">
             <label for="tel" className="form-group__label">
-              Телефон
+              Phone
             </label>
             <input
               className="form-group__input"
@@ -49,7 +49,7 @@ const ModalWindow = ({ isOpen, onClose, children }) => {
 
           <div className="form-group">
             <label for="email" className="form-group__label">
-              Почта
+              E-mail
             </label>
             <input
               className="form-group__input"
@@ -64,7 +64,7 @@ const ModalWindow = ({ isOpen, onClose, children }) => {
 
           <div className="form-group form-group__feedback">
             <label for="feedback" className="form-group__label">
-              Комментарий
+              Comment
             </label>
             <textarea
               className="form-group__textarea"
@@ -82,15 +82,15 @@ const ModalWindow = ({ isOpen, onClose, children }) => {
               id="policy"
             />
             <label className="form-group__policy" for="policy">
-              Соглашаюсь с рассылкой и принимаю{" "}
+              I want to receive e-mails and accept{" "}
               <a className="policy-conditions" href="/">
-                Условия договора
+                agreement conditions
               </a>
             </label>
           </div>
 
           <button className="form-group__btn" type="submit">
-            Отправить
+            Send
           </button>
         </form>
       </div>
