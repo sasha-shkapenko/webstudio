@@ -84,7 +84,7 @@ const ModalWindow = ({ isOpen, onClose, children }) => {
             <label className="form-group__policy" for="policy">
               I want to receive e-mails and accept{" "}
               <a className="policy-conditions" href="/">
-                agreement conditions
+                terms and conditions
               </a>
             </label>
           </div>
