@@ -7,31 +7,31 @@ const PortfolioPage = () => {
     <>
       <section className="section">
         <div className="container">
-          <h1 className="visually-hidden">Разработки</h1>
+          <h1 className="visually-hidden">Developments</h1>
           <ul className="filter">
             <li className="filter__item">
               <button className="filter__button" type="button">
-                Все
+                All
               </button>
             </li>
             <li className="filter__item">
               <button className="filter__button" type="button">
-                Веб-сайты
+                Websites
               </button>
             </li>
             <li className="filter__item">
               <button className="filter__button" type="button">
-                Приложения
+                Apps
               </button>
             </li>
             <li className="filter__item">
               <button className="filter__button" type="button">
-                Дизайн
+                Design
               </button>
             </li>
             <li className="filter__item">
               <button className="filter__button" type="button">
-                Маркетинг
+                Marketing
               </button>
             </li>
           </ul>
