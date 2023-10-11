@@ -18,7 +18,7 @@ const HomePage = () => {
       <section className="hero">
         <div>
           <h1 className="hero__title">
-            Эффективные решения <br /> для вашего бизнеcа
+            Effective solutions <br /> for your business
           </h1>
           <button
             className="hero__button"
@@ -26,7 +26,7 @@ const HomePage = () => {
             type="button"
             onClick={openModal}
           >
-            Заказать услугу
+            Order service
           </button>
           <ModalWindow isOpen={isModalOpen} onClose={closeModal} />
         </div>
@@ -34,7 +34,7 @@ const HomePage = () => {
 
       <section className="section section--no-paddind">
         <div className="container">
-          <h2 className="visually-hidden">Особенности</h2>
+          <h2 className="visually-hidden">Features</h2>
           <ul className="features">
             <li className="features__item">
               <div className="features__icon-box">
@@ -42,10 +42,10 @@ const HomePage = () => {
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 className="features__title">Внимание к деталям</h3>
+              <h3 className="features__title">Attention to detail</h3>
               <p className="features__text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Ideological considerations, as well as the beginning of the
+                daily work of forming a position.
               </p>
             </li>
 
@@ -55,10 +55,10 @@ const HomePage = () => {
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 className="features__title">Пунктуальность</h3>
+              <h3 className="features__title">Punctuality</h3>
               <p className="features__text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                The task of the organization, in particular the scope and
+                location of personnel training, entails.
               </p>
             </li>
 
@@ -68,10 +68,10 @@ const HomePage = () => {
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 className="features__title">Планирование</h3>
+              <h3 className="features__title">Planning</h3>
               <p className="features__text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+                Equally, consultation with a broad assistanse positively affects
+                the result of the company.
               </p>
             </li>
 
@@ -81,10 +81,10 @@ const HomePage = () => {
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 className="features__title">Современные технологии</h3>
+              <h3 className="features__title">Modern technologies</h3>
               <p className="features__text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                The significance of these problems is so obvious that the
+                implementation of planned targets.
               </p>
             </li>
           </ul>
@@ -93,7 +93,7 @@ const HomePage = () => {
 
       <section className="section we-do">
         <div className="container">
-          <h2 className="section__title">Чем мы занимаемся</h2>
+          <h2 className="section__title">What we do</h2>
           <ul className="we-do__list">
             <li className="we-do__item">
               <picture>
@@ -111,7 +111,7 @@ const HomePage = () => {
                 />
               </picture>
               <div className="we-do__descr-thumb">
-                <h3 className="we-do__descr-text">Десктопные приложения</h3>
+                <h3 className="we-do__descr-text">Desktop applications</h3>
               </div>
             </li>
             <li className="we-do__item">
@@ -130,7 +130,7 @@ const HomePage = () => {
                 />
               </picture>
               <div className="we-do__descr-thumb">
-                <h3 className="we-do__descr-text">Мобильные приложения</h3>
+                <h3 className="we-do__descr-text">Mobile applications</h3>
               </div>
             </li>
             <li className="we-do__item">
@@ -149,7 +149,7 @@ const HomePage = () => {
                 />
               </picture>
               <div className="we-do__descr-thumb">
-                <h3 className="we-do__descr-text">Дизайнерские решения</h3>
+                <h3 className="we-do__descr-text">Design solutions</h3>
               </div>
             </li>
           </ul>
@@ -158,7 +158,7 @@ const HomePage = () => {
 
       <section className="section section--grey-bg">
         <div className="container">
-          <h2 className="section__title">Наша команда</h2>
+          <h2 className="section__title">Our team</h2>
           <ul className="team">
             <li className="team__item">
               <picture>
@@ -191,7 +191,7 @@ const HomePage = () => {
               </picture>
 
               <div className="team__thumb">
-                <h3 className="team__title">Игорь Демьяненко</h3>
+                <h3 className="team__title">Igor Demyanenko</h3>
                 <p className="team__description">Product Designer</p>
                 <ul className="socials">
                   <li className="socials__item">
@@ -266,7 +266,7 @@ const HomePage = () => {
               </picture>
 
               <div className="team__thumb">
-                <h3 className="team__title">Ольга Репина</h3>
+                <h3 className="team__title">Olga Repina</h3>
                 <p className="team__description">Frontend Developer</p>
                 <ul className="socials">
                   <li className="socials__item">
@@ -342,7 +342,7 @@ const HomePage = () => {
               </picture>
 
               <div className="team__thumb">
-                <h3 className="team__title">Николай Тарасов</h3>
+                <h3 className="team__title">Nikolai Tarasov</h3>
                 <p className="team__description">Marketing</p>
                 <ul className="socials">
                   <li className="socials__item">
@@ -417,7 +417,7 @@ const HomePage = () => {
                 />
               </picture>
               <div className="team__thumb">
-                <h3 className="team__title">Михаил Ермаков</h3>
+                <h3 className="team__title">Mykhail Ermakov</h3>
                 <p className="team__description">UI Designer</p>
                 <ul className="socials">
                   <li className="socials__item">
@@ -466,7 +466,7 @@ const HomePage = () => {
 
       <section className="section ">
         <div className="container">
-          <h2 className="section__title">Постоянные клиенты</h2>
+          <h2 className="section__title">Regular customers</h2>
           <ul className="clients">
             <li className="clients__item">
               <a className="clients__link" href="/">
