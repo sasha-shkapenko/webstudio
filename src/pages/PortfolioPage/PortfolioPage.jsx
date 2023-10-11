@@ -26,7 +26,7 @@ const PortfolioPage = () => {
             </li>
             <li className="filter__item">
               <button className="filter__button" type="button">
-                Design
+                Designs
               </button>
             </li>
             <li className="filter__item">
