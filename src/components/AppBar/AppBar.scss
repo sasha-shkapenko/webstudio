@@ -2,10 +2,16 @@
 
 .header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 215px;
+  max-width: 1200px;
+  padding: 0 15px;
   border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    height: 60px;
+  }
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -18,8 +24,12 @@
   display: flex;
   align-items: center;
 }
+
 .nav-item {
   transition: color 250ms ease;
+  display: block;
+  height: 100%;
+  position: relative;
 
   &:hover,
   &:focus {
@@ -27,6 +37,50 @@
   }
   &:not(:last-child) {
     margin-right: 50px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+
+      height: 4px;
+      width: 100%;
+
+      background-color: $accent;
+      border-radius: 2px;
+      transform: scaleX(0);
+      transition: transform 250ms ease;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.nav-menu {
+  .site-nav__link.active {
+    // Styles for the active link
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      height: 4px;
+      width: 100%;
+      background-color: $accent;
+      border-radius: 2px;
+    }
   }
 }
 
@@ -56,4 +110,28 @@
   .contact-item:hover & {
     fill: $accent;
   }
+}
+
+.hamburger {
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.nav-menu {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 769px) {
+    display: flex;
+  }
+}
+.nav-menu.open {
+  display: block;
 }

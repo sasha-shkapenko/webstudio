@@ -27,7 +27,7 @@ const Footer = () => {
               </li>
               <li className="address__item">
                 <a className="address__link" href="tel:+380991111111">
-                  +380991111111
+                  +38 099 111 11 11
                 </a>
               </li>
             </ul>

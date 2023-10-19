@@ -36,7 +36,9 @@ const PortfolioPage = () => {
             </li>
           </ul>
         </div>
-        <ProjectList data={data} />
+        <div className="container">
+          <ProjectList data={data} />
+        </div>
       </section>
     </>
   );

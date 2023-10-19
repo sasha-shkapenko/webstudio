@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <>
       <section className="hero">
-        <div>
+        <div className="container">
           <h1 className="hero__title">
             Effective solutions <br /> for your business
           </h1>
