@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/webstudio/static/css/main.1daf6216.css",
+    "main.js": "/webstudio/static/js/main.b27fee38.js",
+    "static/js/787.7af91edb.chunk.js": "/webstudio/static/js/787.7af91edb.chunk.js",
+    "static/media/desktop-hero@2x.jpg": "/webstudio/static/media/desktop-hero@2x.ddf8f7d016ccde9dda12.jpg",
+    "static/media/tablet-hero@2x.jpg": "/webstudio/static/media/tablet-hero@2x.a52345f11d7b26bdc2c6.jpg",
+    "static/media/desktop-hero.jpg": "/webstudio/static/media/desktop-hero.e079803af6ed09be40bd.jpg",
+    "static/media/mob-hero@2x.jpg": "/webstudio/static/media/mob-hero@2x.87d8f19c4cf1f62e1488.jpg",
+    "static/media/tablet-hero.jpg": "/webstudio/static/media/tablet-hero.6ab162582bec1abb748f.jpg",
+    "static/media/mob-hero.jpg": "/webstudio/static/media/mob-hero.6b13de936b969fb882d2.jpg",
+    "index.html": "/webstudio/index.html",
+    "static/media/icon-check.svg": "/webstudio/static/media/icon-check.e9cf40ba8e6a0a2114f9.svg",
+    "main.1daf6216.css.map": "/webstudio/static/css/main.1daf6216.css.map",
+    "main.b27fee38.js.map": "/webstudio/static/js/main.b27fee38.js.map",
+    "787.7af91edb.chunk.js.map": "/webstudio/static/js/787.7af91edb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1daf6216.css",
+    "static/js/main.b27fee38.js"
+  ]
+}
