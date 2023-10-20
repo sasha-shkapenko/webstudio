@@ -34,6 +34,8 @@
 .footer__logo {
   @extend %logo;
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 .logo--color-foot {
