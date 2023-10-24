@@ -5,9 +5,6 @@ import "./AppBar.scss";
 const AppBar = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuVisible(!mobileMenuVisible);
-  };
   return (
     <header className="header">
       <div className="container header__container">
