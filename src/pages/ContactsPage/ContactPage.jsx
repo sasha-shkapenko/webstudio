@@ -1,10 +1,10 @@
-import s from "./ContactPage.module.css";
+import "./ContactPage.module.scss";
 
 const ContactPage = () => {
   return (
     <>
       <div className="container">
-        <section class="section">
+        <section className="section section__contacts">
           <address className="address">
             <ul className="address__list">
               <li className="address__item">

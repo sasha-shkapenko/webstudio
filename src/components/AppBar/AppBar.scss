@@ -1,51 +1,101 @@
 @import "../../styles/main.scss";
 
 .header {
-  display: flex;
   position: relative;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  padding: 0 15px;
+  display: flex;
+  background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
   @media screen and (max-width: 767px) {
     justify-content: space-between;
     height: 60px;
   }
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    padding-right: 0;
+  }
 }
+// .header {
+//   display: flex;
+//   position: relative;
+//   justify-content: space-between;
+//   align-items: center;
+//   max-width: 1200px;
+//   padding: 0 15px;
+//   border-bottom: 1px solid #ececec;
+//   @media screen and (max-width: 767px) {
+//     justify-content: space-between;
+//     height: 60px;
+//   }
+// }
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 0.03;
-  margin-right: 93px;
+}
+.header-mobile {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+.header__btn {
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .nav {
-  display: flex;
-  align-items: center;
 }
-
+.nav-list {
+  flex-direction: row;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
 .nav-item {
   transition: color 250ms ease;
   display: block;
   height: 100%;
   position: relative;
-
   &:hover,
   &:focus {
     color: $accent;
   }
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
   @media screen and (max-width: 767px) {
     font-size: 40px;
     line-height: 1.17;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
   @media screen and (min-width: 768px) {
     padding-top: 28px;
     padding-bottom: 28px;
-
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -67,9 +117,33 @@
   }
 }
 
-.nav-menu {
+.menu {
+  @media screen and (max-width: 767px) {
+    transform: translateX(100%);
+    transition: transform 250ms ease;
+    z-index: 2;
+    position: absolute;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 48px 40px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.open {
+      transform: translateX(0);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
   .site-nav__link.active {
-    // Styles for the active link
     &::after {
       content: "";
       position: absolute;
@@ -88,8 +162,39 @@
   color: $accent;
 }
 
+.menu__btn {
+  position: absolute;
+  border: none;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu__btn:hover.icon--cross {
+  fill: $accent;
+}
+.icon--menu,
+.icon--cross {
+  display: block;
+  transition: fill 250ms ease;
+  .header__btn:hover & {
+    fill: $accent;
+  }
+}
 .contact-list {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  &.visible {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .contact-item {
@@ -112,18 +217,6 @@
   }
 }
 
-.hamburger {
-  display: inline-flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 1;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
 .nav-menu {
   @media (max-width: 768px) {
     display: none;
